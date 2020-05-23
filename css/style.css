@@ -1,0 +1,13 @@
+a {
+    color: #3c43c9;
+}
+
+a:hover {
+	color: #d4428f;
+}
+
+.container {
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: lightslategray;
+}

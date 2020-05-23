@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scrape</title>
+    <!-- Here we are loading our bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="alert alert-warning alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Warning!</strong> This page will not update automatically! This 'small project' was intended to be used in a private network.
+    </div>
+    <div class="custom-control custom-switch screenMode">
+      <input type="checkbox" class="custom-control-input" id="switch1">
+      <label class="custom-control-label modeText" for="switch1">Dark mode</label>
+    </div>
+    <div class="container">
+        <h2>TeamTreeHouse</h2>
+        <p>Community Helper v0.1</p>            
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Title</th>
+              <th>Time Of Post</th>
+              <th>Answers</th>
+              <th>Answered</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody class="displayContent">
+            <!-- We are going to be appending our <tr> elements here -->
+          </tbody>
+        </table>
+      </div>
+
+<script src="test_app.js"></script>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+</script>
+</body>
+</html>

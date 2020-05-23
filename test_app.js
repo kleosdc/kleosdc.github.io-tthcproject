@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function createElement(elementName, property, value) {
             const element = document.createElement(elementName);
             element[property] = value;
+            if (element.tagName === 'A') {element.target = '_blank'};
             return element
         }
 
